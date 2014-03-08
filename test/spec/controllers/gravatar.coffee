@@ -19,6 +19,4 @@ describe 'Controller: GravatarCtrl', () ->
     }
 
   it 'should attach a list of awesomeThings to the scope', () ->
-    expect(scope.awesomeThings).toBeUndefined()
-    $httpBackend.flush()
-    expect(scope.awesomeThings.length).toBe 4
+

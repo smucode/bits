@@ -1,0 +1,43 @@
+<div class="col-sm-8 col-sm-offset-2">
+  <div class="bit-app">
+    <h2>Currency Converter</h2>
+    <p>Enter the names of the currencies you want to convert from and to.</p>
+    <div>
+      <form>
+        <input
+          type="text"
+          ng-model="f"
+          placeholder="Convert from"
+          style="margin-bottom: 20px;"
+        />
+        <input
+          type="text"
+          ng-model="t"
+          placeholder="Convert to"
+          style="margin-bottom: 20px;"
+        />
+        <input
+          value="Go!"
+          type="submit"
+          ng-click="convert()"
+          style="margin-bottom: 20px;"
+          ng-disabled="!(f && t)"
+        />
+      </ng-form>
+    </div>
+    <div ng-show="conv">
+      <p>1 {{from}} is {{conv | number:2}} {{to}}</p>
+      <p>10 {{from}} is {{conv * 10 | number:2}} {{to}}</p>
+      <p>100 {{from}} is {{conv * 100 | number:2}} {{to}}</p>
+    </div>
+    <div ng-show="err">
+      <p>Uhm, that didn't work... Are you sure your currencies are correct?</p>
+    </div>
+    <div ng-show="serr">
+      <p>Dang, that didn't work. The currency server appears to be down...</p>
+    </div>
+    <div ng-show="wait">
+      <p>Calculating...</p>
+    </div>
+  </div>
+</div>

@@ -17,6 +17,10 @@ angular.module('bitsApp', [
         templateUrl: 'partials/gravatar'
         controller: 'GravatarCtrl'
 
+      .when '/currency',
+        templateUrl: 'partials/currency'
+        controller: 'CurrencyCtrl'
+
       .otherwise
         redirectTo: '/'
 
