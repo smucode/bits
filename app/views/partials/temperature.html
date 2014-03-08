@@ -1,19 +1,19 @@
-<div class="col-sm-8 col-sm-offset-2">
+<div class="col-sm-8 col-sm-offset-2 b2">
   <div class="bit-app">
     <h2>Temperature Converter</h2>
     <p>{{info()}}</p>
 
-    <div>
+    <div style="margin-bottom: 20px;">
       <input
         type="text"
         ng-model="temp"
         placeholder="Enter a temperature..."
-        style="margin-bottom: 20px; width: 100px; text-align: center;"
+        style="width: 100px; text-align: center;"
       />
 
        <div class="btn-group">
           <button
-            style="border-radius: 10px 0 0 10px;"
+            style="border-radius: 0;"
             type="button"
             class="btn btn-primary"
             ng-model="from"
@@ -28,7 +28,7 @@
             Fahrenheit
           </button>
           <button
-            style="border-radius: 0 10px 10px 0;"
+            style="border-radius: 0;"
             type="button"
             class="btn btn-primary"
             ng-model="from"
@@ -38,18 +38,18 @@
       </div>
     </div>
 
-    <div>
+    <div style="margin-bottom: 20px;">
       <input
         type="text"
         xxng-model="temp"
         disabled="disabled"
         ng-value="convert()"
-        style="margin-bottom: 20px; width: 100px; text-align: center;"
+        style="width: 100px; text-align: center;"
       />
 
        <div class="btn-group">
           <button
-            style="border-radius: 10px 0 0 10px;"
+            style="border-radius: 0;"
             type="button"
             class="btn btn-primary"
             ng-model="to"
@@ -64,7 +64,7 @@
             Fahrenheit
           </button>
           <button
-            style="border-radius: 0 10px 10px 0;"
+            style="border-radius: 0;"
             type="button"
             class="btn btn-primary"
             ng-model="to"
