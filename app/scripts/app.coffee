@@ -1,11 +1,12 @@
 'use strict'
 
 angular.module('bitsApp', [
+  'ngMd5'
+  'ngRoute'
   'ngCookies'
   'ngResource'
   'ngSanitize'
-  'ngRoute'
-  'ngMd5'
+  'ui.bootstrap'
 ])
   .config ($routeProvider, $locationProvider) ->
     $routeProvider
@@ -20,6 +21,10 @@ angular.module('bitsApp', [
       .when '/currency',
         templateUrl: 'partials/currency'
         controller: 'CurrencyCtrl'
+
+      .when '/temperature',
+        templateUrl: 'partials/temperature'
+        controller: 'TemperatureCtrl'
 
       .otherwise
         redirectTo: '/'

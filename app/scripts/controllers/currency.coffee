@@ -2,10 +2,6 @@
 
 angular.module('bitsApp')
   .controller 'CurrencyCtrl', ($scope, $http) ->
-    # http://rate-exchange.appspot.com/currency?from=nok&to=gbp&callback=123
-    $http.get('/api/awesomeThings').success (awesomeThings) ->
-      $scope.awesomeThings = awesomeThings
-
     $scope.convert = ->
       ((from, to) ->
         url = "http://rate-exchange.appspot.com/currency?from=#{from}&to=#{to}&callback=JSON_CALLBACK"

@@ -1,0 +1,77 @@
+<div class="col-sm-8 col-sm-offset-2">
+  <div class="bit-app">
+    <h2>Temperature Converter</h2>
+    <p>{{info()}}</p>
+
+    <div>
+      <input
+        type="text"
+        ng-model="temp"
+        placeholder="Enter a temperature..."
+        style="margin-bottom: 20px; width: 100px; text-align: center;"
+      />
+
+       <div class="btn-group">
+          <button
+            style="border-radius: 10px 0 0 10px;"
+            type="button"
+            class="btn btn-primary"
+            ng-model="from"
+            btn-radio="'C'">
+            Celcius
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            ng-model="from"
+            btn-radio="'F'">
+            Fahrenheit
+          </button>
+          <button
+            style="border-radius: 0 10px 10px 0;"
+            type="button"
+            class="btn btn-primary"
+            ng-model="from"
+            btn-radio="'K'">
+            Kelvin
+          </button>
+      </div>
+    </div>
+
+    <div>
+      <input
+        type="text"
+        xxng-model="temp"
+        disabled="disabled"
+        ng-value="convert()"
+        style="margin-bottom: 20px; width: 100px; text-align: center;"
+      />
+
+       <div class="btn-group">
+          <button
+            style="border-radius: 10px 0 0 10px;"
+            type="button"
+            class="btn btn-primary"
+            ng-model="to"
+            btn-radio="'C'">
+            Celcius
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            ng-model="to"
+            btn-radio="'F'">
+            Fahrenheit
+          </button>
+          <button
+            style="border-radius: 0 10px 10px 0;"
+            type="button"
+            class="btn btn-primary"
+            ng-model="to"
+            btn-radio="'K'">
+            Kelvin
+          </button>
+      </div>
+    </div>
+  </div>
+</div>
