@@ -1,0 +1,80 @@
+$icon-font-path: "/bower_components/bootstrap-sass/fonts/";
+
+@import 'bootstrap-sass/lib/bootstrap';
+
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+
+body * {
+    font-family: 'Carrois Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #E67E22;
+    padding: 40px 20px;
+}
+
+/*shared */
+
+.bit-nav, .bit-app {
+    background: white;
+    border-radius: 50px;
+    padding: 10px 20px 20px 20px;
+    border: 10px solid #D35400;
+    text-align: center;
+    margin: 10px 0 ;
+}
+
+/* navigation */
+
+.bit-nav {
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+
+    img {
+        display: inline-block;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+}
+.bit-nav:hover {
+    border: 10px solid #C0392B;
+    text-decoration: none;
+}
+
+/* apps */
+
+.bit-app {
+    a {
+        padding: 0 5px;
+    }
+    a:hover {
+        text-decoration: none;
+        color: white;
+        background: #E67E22;
+    }
+    input {
+        border: 2px solid #F1C40F;
+        outline: 0;
+        border-radius: 15px;
+        padding: 5px 10px;
+        background: white;
+    }
+    h2, p {
+        padding-bottom: 10px;
+    }
+}
+
+/* footer */
+
+.footer {
+    padding: 10px;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

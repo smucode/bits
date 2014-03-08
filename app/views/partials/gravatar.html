@@ -1,0 +1,18 @@
+<div class="col-sm-8 col-sm-offset-2">
+  <div class="bit-app">
+    <h2>Gravatar Tester</h2>
+    <p>Enter an email address below, and we'll show you their <a href="http://gravatar.com" target="_blank">gravatar</a>.</p>
+    <div>
+      <input
+        type="text"
+        ng-model="email"
+        placeholder="Enter an email address..."
+        style="width: 60%; margin-bottom: 20px;"
+      />
+    </div>
+    <img
+      style="border-radius: 50px; margin: 20px; height: 100px; width: 100px;"
+      src="http://www.gravatar.com/avatar/{{ email | gravatar }}?s=100"
+    />
+  </div>
+</div>
