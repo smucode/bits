@@ -27,6 +27,7 @@ body {
 /* navigation */
 
 .bit-nav {
+    height: 180px;
     font-size: 20px;
     cursor: pointer;
     display: block;
@@ -34,8 +35,8 @@ body {
     img {
         display: inline-block;
         text-align: center;
-        width: 100px;
-        height: 100px;
+        max-width: 100px;
+        max-height: 100px;
     }
 }
 .bit-nav:hover {
