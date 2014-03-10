@@ -1,18 +1,32 @@
-<div class="col-sm-8 col-sm-offset-2 b3">
-  <div class="bit-app">
-    <h2>Gravatar Tester</h2>
-    <p>Enter an email address below, and we'll show you their <a href="http://gravatar.com" target="_blank">gravatar</a>.</p>
+<div class="col-sm-8 col-sm-offset-2">
+  <div class="bit-app b3">
+    <h2>Gravatar Image Tester</h2>
+    <p>Type an email address and we'll show you the registered <a href="http://gravatar.com" target="_blank">gravatar</a>.</p>
     <div>
+      <label style="display: block;">Email address:</label>
       <input
         type="text"
         ng-model="email"
-        placeholder="Enter an email address..."
         style="width: 60%;"
+        placeholder="Enter an email address..."
       />
+      <label style="display: block; padding-top: 10px;">Not found gravatar:</label>
+      <select ng-model="default">
+        <option value="">logo</option>
+        <option>mm</option>
+        <option>identicon</option>
+        <option>monsterid</option>
+        <option>wavatar</option>
+        <option>retro</option>
+      </select>
     </div>
     <img
-      style="margin: 20px; height: 100px; width: 100px; margin: 30px;"
-      src="http://www.gravatar.com/avatar/{{ email | gravatar }}?s=100"
+      style="height: 100px; width: 100px; margin: 30px;"
+      src="http://www.gravatar.com/avatar/{{ email | gravatar }}?s=100&d={{default}}"
     />
+    <div style="font-size: 8px; margin-bottom: 10px;">
+      http://www.gravatar.com/avatar/{{ email | gravatar }}?s=100&d={{default}}
+    </div>
+
   </div>
 </div>

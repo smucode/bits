@@ -2,6 +2,8 @@
 
 angular.module('bitsApp')
   .controller 'TemperatureCtrl', ($scope) ->
+    # http://jsfiddle.net/yMLqz/2/
+
     $scope.from = 'F'
     $scope.to   = 'C'
     $scope.temp = 375
